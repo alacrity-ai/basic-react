@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                          // Latest stable JS target widely supported
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],    // Browser + latest ECMAScript libs
+    "module": "preserve",                          // Vite expects ES modules
+    "moduleResolution": "Bundler",              // Modern Node-style resolution
+    "jsx": "react-jsx",                          // React 17+ JSX transform
+    "jsxImportSource": "react",
+    "types": ["react", "react-dom"],
+    "esModuleInterop": true,                     // Interop with CommonJS modules
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,                   // Allow import of .json files
+    "isolatedModules": true,                     // Each file is treated as a module (Vite needs this)
+    "noEmit": true,                              // Let Vite handle output
+    "strict": true,                              // Full strict type-checking
+    "skipLibCheck": true,                        // Speeds up compilation, safe for Vite projects
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

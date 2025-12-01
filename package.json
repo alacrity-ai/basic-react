@@ -1,0 +1,37 @@
+{
+  "name": "farmtech-website",
+  "version": "1.0.0",
+  "engines": {
+    "node": "24.7"
+  },
+  "description": "Company website, static, marketing, brochureware, external-facing",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules",
+    "deploy:prep": "npm run build && cp dist/index.html dist/404.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.62.0",
+    "react-router-dom": "^7.9.1",
+    "react-toastify": "^11.0.5",
+    "react-turnstile": "^1.1.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@types/react-form": "^4.0.6",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^5.0.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5"
+  }
+}
